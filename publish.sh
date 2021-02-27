@@ -8,7 +8,7 @@ WORKING_DIRECTORY="$PWD"
   echo "ERROR: Environment variable GITHUB_PAGES_REPO is required"
   exit 1
 }
-[ -z "$GITHUB_PAGES_BRANCH" ] && GITHUB_PAGES_BRANCH=gh-pages
+[ -z "$GITHUB_PAGES_BRANCH" ] && GITHUB_PAGES_BRANCH=master
 [ -z "$HELM_CHARTS_SOURCE" ] && HELM_CHARTS_SOURCE="$WORKING_DIRECTORY/charts"
 [ -d "$HELM_CHARTS_SOURCE" ] || {
   echo "ERROR: Could not find Helm charts in $HELM_CHARTS_SOURCE"
